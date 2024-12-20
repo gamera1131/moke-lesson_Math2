@@ -1,0 +1,113 @@
+\documentclass{jsarticle}
+\usepackage{ascmac}
+\usepackage{amsmath}
+\begin{document}
+\section*{2次方程式の解と係数の関係}
+2次方程式$ax^2+bx+c=0$の2つの解を$\alpha,\beta$とすると、$\alpha + \beta , \alpha\beta$は次のようになる
+\begin{itembox}[l]{解と係数の関係}
+  \vskip\baselineskip
+  \begin{center}
+    $\alpha +  \beta = $ \underline{\hspace{5em}}  ,　$\alpha\beta = $ \underline{\hspace{5em}} 
+  \end{center}
+\end{itembox}
+
+\subsection*{[証明]}
+$\alpha , \beta$をそれぞれ　$\alpha=$ \underline{\hspace{10em}} , $\beta=$\underline{\hspace{10em}}とおく。\par
+  \vspace{7mm}
+$\alpha + \beta = \dfrac{-b+\sqrt{b^2-4ac}}{2a}+\dfrac{-b-\sqrt{b^2-4ac}}{2a}=\underline{\hspace{6em}}=\underline{\hspace{6em}}$\par
+  \vspace{7mm}
+$\alpha\beta = \dfrac{-b+\sqrt{b^2-4ac}}{2a}・\dfrac{-b-\sqrt{b^2-4ac}}{2a}=\underline{\hspace{10em}}=\underline{\hspace{6em}}=\underline{\hspace{6em}}$\par
+  \vspace{10mm}
+このように,2次方程式の2つの解の和と積は、その係数を用いて表すことができる。  \par
+これを2次方程式の\textbf{解と係数の関係}という
+
+※この関係は$\alpha=\beta$のとき、つまり解が重解のときにも成り立つ。
+\begin{itembox}[l]{memo}
+  \vspace{20mm}
+\end{itembox}
+\subsection*{[例7]}
+  2次方程式$3x^2-5x-6=0$ の2つの解を $\alpha,\beta$ とすると\par
+  \vspace{8mm}
+  $\alpha + \beta = $\underline{\hspace{6em}} $=$ \underline{\hspace{6em}},\qquad$ \alpha\beta = $\underline{\hspace{6em}} $=$ \underline{\hspace{6em}}
+\subsection*{練習11}
+次の2次方程式について,2つの解の和と積を求めよ。
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\begin{enumerate}
+  \item 
+    $x^2+3x-5=0$
+  \item
+    $-3x^2+7x-4=0$
+  \item
+    $3x^2+2=0$
+\end{enumerate}
+\begin{itembox}[l]{練習11　解答欄}
+  \vspace{40mm}
+\end{itembox}
+\section*{解と係数の関係を利用した問題}
+\subsection*{[例題4]}
+2次方程式$x^2+2x+3=0$の2つの解を$\alpha,\beta$とするとき,$\alpha ^2+\beta ^2$の値を求めよ。
+\begin{itembox}[l]{解答}
+  解と係数の関係から $\alpha+\beta = \underline{\hspace{6em}}$ ,$\alpha\beta = \underline{\hspace{6em}}$\par
+  \vspace{3mm}
+  よって\qquad$\alpha^2+\beta^2=(\alpha+\beta)^2-2\alpha\beta=(-2)^2-2・3=-2$
+\end{itembox}
+\subsection*{練習12}
+  2次方程式$x^2-3x-1=0$の2つの解を$\alpha,\beta$とするとき,次の式の値を求めよ。
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\begin{enumerate}
+  \item 
+    $\alpha^2+\beta^2$
+  \item
+    $\alpha^3+\beta^3$
+\end{enumerate}
+※(2)のヒント:$\alpha^3+\beta^3 = (\alpha+\beta)^3-3\alpha\beta(\alpha+\beta)$を使って解く
+\begin{itembox}[l]{練習12　解答欄}
+  \vspace{40mm}
+\end{itembox}
+\newpage
+\begin{boxnote}
+  \textbf{コラム ～2次方程式の解と係数の関係の別の証明方法～}\par
+    2次方程式の解と係数の関係の公式は以下の方法でも証明が出来る。\par
+  \vspace{2mm}
+  [証明]\par
+  2次方程式$ax^2+bx+c=0$の2つの解を$\alpha,\beta$とすると、\par
+  $ax^2+bx+c = a(x-\alpha)(x-\beta)$となる。\par
+  右辺を展開すると,\par 
+  (右辺)$=a\{x^2-(\alpha+\beta)x+\alpha\beta\}=ax^2-a(\alpha+\beta)x+a\alpha\beta$\par
+  ここで両辺を係数比較すると\par
+  $\left\{\begin{array}{ll}
+    b=-a(\alpha+\beta)\\
+    c=a\alpha\beta
+  \end{array}\right.$\par
+  \vspace{2mm}
+  $a\not=0$なので\par
+  \vspace{2mm}
+  $\left\{\begin{array}{ll}
+    \alpha+\beta = -\dfrac{b}{a}\\
+    \alpha\beta = \dfrac{c}{a}
+  \end{array}\right.$
+  \qquad\qquad[終]\par
+  \vspace{4mm}
+  この証明方法を利用すると3次以上の方程式の解と係数の関係を証明することが出来る。\par
+  \vspace{2mm}
+  [証明]\par
+  3次方程式$ax^3+bx^2+cx+d=0$の解を$\alpha,\beta,\gamma$とすると,\par
+  $ax^3+bx^2+cx+d = a(x-\alpha)(x-\beta)(x-\gamma)=a\{x^3-(\alpha+\beta+\gamma)x^2+(\alpha\beta+\beta\gamma+\gamma\alpha)x-\alpha\beta\gamma\}$\par
+  ここで両辺を係数比較すると\par
+  \vspace{2mm}
+   $\left\{\begin{array}{lll}
+     b=-a(\alpha+\beta+\gamma)\\
+     c=a(\alpha\beta+\beta\gamma+\gamma\alpha)\\
+     d=-a\alpha\beta\gamma
+  \end{array}\right.$\par
+  \vspace{2mm}
+  $a\not=0$なので\par
+  \vspace{2mm}
+  $\left\{\begin{array}{lll}
+     \alpha+\beta+\gamma=-\dfrac{b}{a}\\
+     \alpha\beta+\beta\gamma+\gamma\alpha=\dfrac{c}{a}\\
+     \alpha\beta\gamma=-\dfrac{d}{a}
+     \vspace{2mm}
+  \end{array}\right.$ \qquad\qquad[終]\par
+\end{boxnote}
+\end{document}
